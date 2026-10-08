@@ -17,7 +17,7 @@ pipeline {
         }
         stage('docker image'){
             steps {
-                sh 'docker build -t pradeep/mavenwebapp .'
+                sh 'docker build -t pradeep/mavenwebapp'
             }
         }
         stage('k8s deploy'){
